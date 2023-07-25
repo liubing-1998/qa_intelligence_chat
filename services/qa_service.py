@@ -103,8 +103,8 @@ class QAService:
 
 if __name__ == '__main__':
     qa = QAService()
-    # qa.create_index()
-    # qa.bulk_add_index()
+    qa.create_index()
+    qa.bulk_add_index()
     query = ["营改增"]
     query_vector = qa.get_embedding(query)
     knowledges = qa.searchQA(query_vector)
