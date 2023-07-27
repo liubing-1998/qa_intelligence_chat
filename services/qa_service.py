@@ -115,6 +115,7 @@ if __name__ == '__main__':
     print()
     reply, history = qa.chat_with_api(prompt)
     print(reply)
+    print()
     print(history)
 
 
